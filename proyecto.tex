@@ -43,8 +43,8 @@
 
 \vspace{50pt} % Some vertical space between the title and author name
 
-{\large\@author} % Author name
-\\\@date % Date
+%{\large\@author} % Author name
+%\\\@date % Date
 
 \vspace{40pt} % Some vertical space between the author block and abstract
 \end{flushright}
@@ -54,11 +54,10 @@
 %<Plug>Tex_InsertItemOnThisLine TITLE
 %----------------------------------------------------------------------------------------
 
-\title{\textbf{Programa de mejora de la calidad académica}\\ % Title
-Registro del horario de dictado de clase y asistencia} % Subtitle
+\title{\textbf{Proyecto de ordenanza}\\ % Title
+\Large Registro del horario de dictado y asistencia a clase} % Subtitle
 
-\author{\textsc{USA for Africa} % Author
-\\{\textit{Departamento Electrónica}}} % Institution
+\author{} % Author
 
 \date{\today} % Date
 
@@ -85,32 +84,43 @@ Registro del horario de dictado de clase y asistencia} % Subtitle
 %<Plug>Tex_InsertItemOnThisLine ESSAY BODY
 %----------------------------------------------------------------------------------------
 
-\section*{Fundamentación}
-El objeto de este proyecto es supervisar los procesos de enseñanza a fin de proseguir con la mejora continua de la calidad académica de la carrera de Ingeniería en Electrónica, abordando los aspectos de asistencia y puntualidad de los docentes, auxiliares y demás personal del departamento relacionado a la gestión académica; como así también la asistencia de los alumnos a clase. 
-\subsection*{Antecedentes}
-La necesidad de implementar un mecanismo de control de asistencia docente ha sido señala ya hace más de un año en la nota fechada 10 de Junio 2015, suscripta por los consejeros del claustro estudiantil del consejo departamental de Electrónica: Martínez Denis, Acha Lautaro, Pucci Francisco, García Mauricio, Cuenca Antonio, Flores Mauricio y otros estudiantes de la carrera de Ingeniería Electrónica; dirigida al consejo departamental y cuya copia se adjunta al presente proyecto. El escrito destaca que dar cumplimentación al mandato estatutario de supervisar la calidad de los procesos de enseñanza implica como condición prioritaria el cumplimiento del dictado de clases. También se reclama por  la degradación del cursado de determinadas cátedras en virtud de inasistencias docentes. Todo por lo cual propone la aplicación de algún dispositivo biométrio para obtener constancia del acceso de los docentes a sus lugares de trabajo.
+\section*{Resumen}
+Este proyecto tiene como finalidad aportar un elemento tendiente a proseguir con la mejora continua de la calidad académica de la carrera de Ingeniería en Electrónica, abordando los aspectos de asistencia y puntualidad del personal docentes en relación al cumplimiento de los horarios asignados al dictado de clase. Complementariamente se propone un método de control de asistencia de los alumnos. 
+\section*{Antecedentes}
+La necesidad de implementar un mecanismo de control de asistencia docente ha sido señalado hace más de un año en la nota fechada 10 de junio 2015, suscripta por los consejeros del claustro estudiantil del consejo departamental de Electrónica: Martínez Denis, Acha Lautaro, Pucci Francisco, García Mauricio, Cuenca Antonio, Flores Mauricio y otros estudiantes de la carrera de Ingeniería Electrónica; dirigida al consejo departamental y cuya copia se adjunta al presente proyecto. El escrito destaca que dar cumplimentación al mandato estatutario de supervisar la calidad de los procesos de enseñanza implica como condición necesaria el cumplimiento del dictado de clases. También se reclama por  la degradación del dictado de determinadas cátedras debido a inasistencias docentes. Todo por lo cual propone la aplicación de algún dispositivo biométrio para obtener constancia del acceso de los docentes a sus lugares de trabajo.
 El inciso D del acta de reunión del consejo departamental de junio de 2015 dice:\\
 \\
-''(D) El director informa que hay una nota presentada por los estudiantes que integran este cuerpo avalada por una lista de firmas donde se solicita la adecuación y mejora del método de registro y control de asistencia de docentes y personal que cumple funciones en el departamento. El ing. Grazzini explica que se dio a la petición curso mediante una nota elevada al Secretario académico para que se analicen las posibilidades de implementar el sistema propuesto. Asimismo y relacionado con el tema, el director pone en conocimiento del consejo las novedades respecto al incumplimiento de la circular emitida oportunamente sobre el llenado de los libros de temas.''\\
+\emph{ El director informa que hay una nota presentada por los estudiantes que integran este cuerpo avalada por una lista de firmas donde se solicita la adecuación y mejora del método de registro y control de asistencia de docentes y personal que cumple funciones en el departamento. El Ing. Grazzini explica que se dio a la petición curso mediante una nota elevada al Secretario académico para que se analicen las posibilidades de implementar el sistema propuesto. Asimismo y relacionado con el tema, el director pone en conocimiento del consejo las novedades respecto al incumplimiento de la circular emitida oportunamente sobre el llenado de los libros de temas.}\\
 \\
-Consideramos que la implementación del control de asistencia está encuadrado dentro de las atribuciones del gobierno del departamento, por lo que carece de objeto cursar pedidos de autorización o consultar por la implementación del mismo. Está en las atribuciones del consejo departamental velar por el cumplimiento de los deberes de los docentes del departamento y en consecuencia determinar los métodos de control a aplicar.\\
+Consideramos que la implementación del control de asistencia se encuadrada dentro de las atribuciones del gobierno del departamento, por lo que carece de objeto cursar pedidos de autorización o consultar por la implementación del mismo. Está entre las atribuciones del consejo departamental establecidas por el Estatuto Universitario velar por el cumplimiento de los deberes de los docentes del departamento como parte de la supervisión de la calidad de los procesos de enseñanza (Art. 93 inc. b) y en consecuencia determinar los métodos de control a aplicar.\\
 \\
-En cuanto a la toma de asistencia será un requisito a partir del año entrante cuando se aplique el regimen de promoción directa, y en vista de la circular para los profesores de fecha 3 de marzo de 2016 esta actividad estaría a cargo de los docentes a raíz de la disolución del área de bedelía. Si bien se informó de esta situación y se mencionó que por expreso pedido un docente podría quedar exceptuado; no se cuentan con lineamientos claros respecto a la implementación del mecanismo de toma de asistencia que fije criterios uniformes y prevea garantías mediante constancia archivada de los registros tomados.
-\subsection*{Finalidad}
-Disponer de una base de datos con el registro del horario de inicio y fin del dictado de las asignaturas por parte de los docentes que permita al director de departamento girar mensualmente a la comisión de enseñanza un reporte que dé constancia de las clases efectivamente dictadas y copia del libro de temas correspondiente al periodo junto con la planificación de la cátedra.
-Que de esta forma la comisión de enseñanza debe emitir un dictamen en todas las reuniones ordinarias de consejo, dando cuenta de las desviaciones entre la planificación y los temas dictados y su correlación, en caso de corresponder con la falta de dictado de clase; como así también observaciones sobre situaciones de inasistencias colectivas.
-\section*{Objetivos Generales}
-\begin{itemize}
-	\item Lanzar la prueba piloto del sistema a partir del primer cuatrimestre del ciclo lectivo 2017.
-\end{itemize}
-\section*{Objetivos Particulares}
+Por otra parte y en vista de la circular para los profesores con fecha 3 de marzo de 2016 el control de asistencia dejaría de estar a cargo del área de bedelía debido a su pronta disolución. A la fecha  no se cuentan con lineamientos claros respecto a la implementación de un método sustituto de registro de asistencia que fije criterios uniformes y prevea garantías mediante constancia archivada de tal registro.
+\section*{Objetivos}
+Disponer de una base de datos con el registro del horario de inicio y fin del dictado de las asignaturas por parte de los docentes obtenidos a partir de un sistema autónomo de registro, con lo que el director de departamento dé cuenta de las inasistencias docentes en todas las sesiones ordinarias del consejo departamental en cumplimiento del inciso g del artículo 96 del Estatuto Universitario. 
+\section*{Lineamientos generales de la operación del sistema}
+En la operación del sistema toman participación diferentes actores del cuerpo de la carrera. El consejo en la supervisión regular de los informes, la comisión de enseñanza en la generación de los reportes, el secretario y el director en la gestión del sistema de software y reportes, los docentes registrando con su marca biométrica el inicio y fin del dictado de las asignaturas y los alumnos firmando las planillas de asistencia.
+\subsection*{Planilla de asistencia}
+Es un documento que estará a disposición de los alumnos durante un lapso de tiempo a determinar en las correspondientes reglamentaciones. Esta planilla tendrá como finalidad que los alumnos registren su asistencia con su nombre y firma. Quedarán archivadas en el departamento a disposición de la comisión de educación y del consejo departamental.
+\subsection*{Registro de inicio y fin del dictado de clase}
+Los docentes deberán dejar constancia del horario de inicio y fin del dictado de clase utilizando el dispositivo de registración biométrico dispuesto en el departamento de electrónica, de acuerdo a la reglamentación a definir.\\
+
+\subsection*{Gestión administrativa del sistema}
+Habrá en el departamento una persona dedicada a la gestión operativa del software.
+\subsection*{Comisión de enseñanza}
+Deberá generar un despacho por cada cátedra conteniendo la evaluación del periodo girado.
+\subsection*{Consejo Departamental}
+Podrá aprobar o rechazar los dictámenes de la comisión.
+
+\section*{Implementación}
+La puesta en funcionamiento definitiva del sistema estará sujeta a su implementación en etapas sucesivas, en cada una de las cuales se incorporarán nuevas funcionalidades al sistema como así también se avanzará progresivamente desde la participación voluntaria hasta la obligatoriedad de su cumplimiento.\\
+
 \begin{itemize}
 	\item Adquirir e instalar un dispositivo biométrico integrándolo a los sistemas informáticos gestionados por centro de cómputos, con transferencia de datos automática sin intervención de operador humano.
 	\item Reglamentar la operación del sistema
 	\item Reglamentar la carga de datos
-	\item Reglamentar el proceso de puesta en marcha y periodo de adaptación
 	\item Reglamentar el tratamiento de los reportes en las comisiones y en el consejo
 \end{itemize}
+\newpage
 \section*{Implementación y funcionamiento}
 Para la operación del sistema propuesto, se distinguen cuatro aspectos fundamentales
 \begin{itemize}
@@ -119,25 +129,23 @@ Para la operación del sistema propuesto, se distinguen cuatro aspectos fundamen
 	\item Actividad regular mensual de la comisión de enseñanza en la evaluación de los reportes y la generación de dictámenes en todas las reuniones ordinarias.
 	\item Operación del software bajo la responsabilidad secretario de departamento.
 \end{itemize}
-\section{Operación del sistema}
-En la operación del sistema toman participación diferentes actores del cuerpo de la carrera. El consejo en la supervisión regular de los informes, la comisión de enseñanza en la generación de los reportes, el secretario en la gestión del sistema de software, los docentes registrando con su marca biométrica el inicio y fin del dictado de las asignaturas y los alumnos firmando las planillas de asistencia.
-\subsection{Planilla de asistencia}
+\section{Para las reglamentaciones-scratch}
+\subsection{de las planillas de asistencia}
+
 Es un documento con el listado de los nombres de los alumnos de cada comisión y un espacio para que registren su firma.
 En el encabezado habrá un espacio para que el o los docentes que estén a cargo del dictado ese día pongan su nombre y firma. Estas planillas deberán ser puesta a disposición de los alumnos por parte del docente durante los primeros 20 minutos del horario oficial de inicio de la clase o en caso de tardanza superior por la razón que sea, deberán ponerse a disposición de los alumnos inmediatamente para que registren su asistencia firmando. A los 20 minutos el docente retira y guarda la planilla. No se podrán incorporar nuevas firmas una vez retirada la planilla. El docente debe verificar que el número de firmas coincida con los presentes al momento de retirarla. En caso que las firmas excedan a los presentes, tomará lista en forma oral y tachará de la lista los ausentes. La planilla tendrá una columna impresa con los números de legajo únicamente, los alumnos deberán completar de puño y letra la columna correspondiente a su nombre completo y la columna con su firma.\\
-\subsection{Registro de inicio y fin del dictado de clase}
-Los docentes deberán dejar constancia del horario de inicio y fin del dictado de clase utilizando el dispositivo de registración biométrico dispuesto en el departamento de electrónica.\\
+\subsection{de los registros biométricos}
 Los docentes tendrán una tolerancia de 15 minutos contados a partir del horario reglamentario de inicio del dictado de clases que le corresponde, a partir de lo cual se computará como inicio tardío del dictado hasta 45 minutos contados de igual forma. Cualquier registro de ingreso posterior se computará como clase no dictada, sin perjuicio de que el docente pueda hacer su descargo por escrito antes de transcurridas 48 horas cuya constancia será agregada en el campo de justificaciones del sistema informático; donde además deberá consignar los temas dictados y la cantidad de alumnos presentes mediante la planilla de asistencia con firma de los mismos.\\
 La finalización del dictado de clase deberá quedar registrado en el dispositivo, los registros deberán realizarse a partir de los 5 minutos posteriores a la finalización del horario de dictado de la materia, y hasta 30 minutos. Los registros fuera de esta ventana de tiempo se computarán como como clase no dictada.\\
 Todos los registros de un docente que califiquen como clase dictada serán considerados con carácter de declaración jurada como así también las planillas de asistencia entregadas al secretario del departamento.\\
 Si transcurridos 25 minutos del horario oficial de inicio de clase, no se hiciera presente ningún alumno de la comisión correspondiente; podrá el docente retirarse, registrar el horario de salida y entregar al secretario del departamento la planilla con su nombre y firma dentro del plazo estipulado a tal fin.\\
-\subsection{Gestión administrativa del secretario}
-El secretario de departamento será encargado de la gestión operativa del software. Deberá generar los documentos con los resultados de los periodos solicitados por el director del departamento para ser girados a la comisión de enseñanza. Deberá receptar las planillas de asistencias remitidas por los docentes y archivarlas para que estén a disposición de la comisión de enseñanza. Será el único habilitado para editar los campos de comentarios en la base de datos, donde deberá consignar los avisos de inasistencia, licencias y franquicias de los docentes todo en acuerdo con la Ordenanza 474 C.S.U. y sus modificatorias Ord. 671 C.S.U. y Ord. 740 C.S.U.\\
+\subsection{de la gestión administrativa}
+ Deberá generar los documentos con los resultados de los periodos solicitados por el director del departamento para ser girados a la comisión de enseñanza. Deberá receptar las planillas de asistencias remitidas por los docentes y archivarlas para que estén a disposición de la comisión de enseñanza. Será el único habilitado para editar los campos de comentarios en la base de datos, donde deberá consignar los avisos de inasistencia, licencias y franquicias de los docentes todo en acuerdo con la Ordenanza 474 C.S.U. y sus modificatorias Ord. 671 C.S.U. y Ord. 740 C.S.U.\\
 También será el encargado de cargar los registros en el dispositivo biométrico y el software cliente. Deberá actualizar anualmente el calendario del programa con el calendario académico emitido por la secretaría académica e incluír también las fechas no laborables.\\
 Deberá también cargar las fechas en que el gremio FAGDUT convoque a paro de actividades.\\
 Deberá cargar los suplentes habilitados en cada cátedra.
-\subsection{Comisión de enseñanza}
-Deberá generar un despacho conteniendo la evaluación del periodo girado por cada cátedra. El despacho será "sin novedad" en aquellos casos en que no se observen discrepancias substanciales entre la planificación y el avance declarado en el libro de temas, y que además no se hayan recibido quejas formales ni avisos de licencias, renuncias o jubilaciones y será informado por el director de departamento al iniciar la sesión.\\
+\subsection{de la comisión de enseñanza}
+ El despacho será "sin novedad" en aquellos casos en que no se observen discrepancias substanciales entre la planificación y el avance declarado en el libro de temas, y que además no se hayan recibido quejas formales ni avisos de licencias, renuncias o jubilaciones y será informado por el director de departamento al iniciar la sesión.\\
 Para cualquier otra situación elaborará un informe acompañado de toda documentación probatoria pertinente y un dictámen o recomendación al respecto; el cual será automáticamente incluído en el temario de la siguiente sesión ordinaria del consejo departamental.
-\subsection{Consejo Departamental}
-Podrá aprobar o rechazar los dictámenes de la comisión.
+Que de esta forma la comisión de enseñanza debe emitir un dictamen en todas las reuniones ordinarias de consejo, dando cuenta de las desviaciones entre la planificación y los temas dictados y su correlación, en caso de corresponder con la falta de dictado de clase; como así también observaciones sobre situaciones de inasistencias colectivas.
 \end{document}
