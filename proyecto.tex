@@ -98,54 +98,21 @@ Por otra parte y en vista de la circular para los profesores con fecha 3 de marz
 \section*{Objetivos}
 Disponer de una base de datos con el registro del horario de inicio y fin del dictado de las asignaturas por parte de los docentes obtenidos a partir de un sistema autónomo de registro, con lo que el director de departamento dé cuenta de las inasistencias docentes en todas las sesiones ordinarias del consejo departamental en cumplimiento del inciso g del artículo 96 del Estatuto Universitario. 
 \section*{Lineamientos generales de la operación del sistema}
-En la operación del sistema toman participación diferentes actores del cuerpo de la carrera. El consejo en la supervisión regular de los informes, la comisión de enseñanza en la generación de los reportes, el secretario y el director en la gestión del sistema de software y reportes, los docentes registrando con su marca biométrica el inicio y fin del dictado de las asignaturas y los alumnos firmando las planillas de asistencia.
+En la operación del sistema toman participación diferentes actores del cuerpo de la carrera. El consejo en la supervisión regular de los informes, el secretario y el director en la gestión del sistema de software y reportes, los docentes registrando con su marca biométrica el inicio y fin del dictado de las asignaturas y los alumnos firmando las planillas de asistencia.
 \subsection*{Planilla de asistencia}
-Es un documento que estará a disposición de los alumnos durante un lapso de tiempo a determinar en las correspondientes reglamentaciones. Esta planilla tendrá como finalidad que los alumnos registren su asistencia con su nombre y firma. Quedarán archivadas en el departamento a disposición de la comisión de educación y del consejo departamental.
+Es un documento que estará a disposición de los alumnos durante un lapso de tiempo a determinar en las correspondientes reglamentaciones. Esta planilla tendrá como finalidad que los alumnos registren su asistencia con su nombre y firma. Quedarán archivadas en el departamento a disposición del consejo departamental.
 \subsection*{Registro de inicio y fin del dictado de clase}
 Los docentes deberán dejar constancia del horario de inicio y fin del dictado de clase utilizando el dispositivo de registración biométrico dispuesto en el departamento de electrónica, de acuerdo a la reglamentación a definir.\\
-
 \subsection*{Gestión administrativa del sistema}
 Habrá en el departamento una persona dedicada a la gestión operativa del software.
-\subsection*{Comisión de enseñanza}
-Deberá generar un despacho por cada cátedra conteniendo la evaluación del periodo girado.
 \subsection*{Consejo Departamental}
-Podrá aprobar o rechazar los dictámenes de la comisión.
-
+???
 \section*{Implementación}
 La puesta en funcionamiento definitiva del sistema estará sujeta a su implementación en etapas sucesivas, en cada una de las cuales se incorporarán nuevas funcionalidades al sistema como así también se avanzará progresivamente desde la participación voluntaria hasta la obligatoriedad de su cumplimiento.\\
 
 \begin{itemize}
 	\item Adquirir e instalar un dispositivo biométrico integrándolo a los sistemas informáticos gestionados por centro de cómputos, con transferencia de datos automática sin intervención de operador humano.
-	\item Reglamentar la operación del sistema
-	\item Reglamentar la carga de datos
-	\item Reglamentar el tratamiento de los reportes en las comisiones y en el consejo
+	\item Reglamentar la operación de la prueba piloto del sistema
+	\item Reglamentar la operación definitiva del sistema
 \end{itemize}
-\newpage
-\section*{Implementación y funcionamiento}
-Para la operación del sistema propuesto, se distinguen cuatro aspectos fundamentales
-\begin{itemize}
-	\item Dispositivo biométrico autónomo de registro de horario enlazado a base de datos del centro de cómputos.
-	\item Software para extracción, procesamiento y presentación de reportes.
-	\item Actividad regular mensual de la comisión de enseñanza en la evaluación de los reportes y la generación de dictámenes en todas las reuniones ordinarias.
-	\item Operación del software bajo la responsabilidad secretario de departamento.
-\end{itemize}
-\section{Para las reglamentaciones-scratch}
-\subsection{de las planillas de asistencia}
-
-Es un documento con el listado de los nombres de los alumnos de cada comisión y un espacio para que registren su firma.
-En el encabezado habrá un espacio para que el o los docentes que estén a cargo del dictado ese día pongan su nombre y firma. Estas planillas deberán ser puesta a disposición de los alumnos por parte del docente durante los primeros 20 minutos del horario oficial de inicio de la clase o en caso de tardanza superior por la razón que sea, deberán ponerse a disposición de los alumnos inmediatamente para que registren su asistencia firmando. A los 20 minutos el docente retira y guarda la planilla. No se podrán incorporar nuevas firmas una vez retirada la planilla. El docente debe verificar que el número de firmas coincida con los presentes al momento de retirarla. En caso que las firmas excedan a los presentes, tomará lista en forma oral y tachará de la lista los ausentes. La planilla tendrá una columna impresa con los números de legajo únicamente, los alumnos deberán completar de puño y letra la columna correspondiente a su nombre completo y la columna con su firma.\\
-\subsection{de los registros biométricos}
-Los docentes tendrán una tolerancia de 15 minutos contados a partir del horario reglamentario de inicio del dictado de clases que le corresponde, a partir de lo cual se computará como inicio tardío del dictado hasta 45 minutos contados de igual forma. Cualquier registro de ingreso posterior se computará como clase no dictada, sin perjuicio de que el docente pueda hacer su descargo por escrito antes de transcurridas 48 horas cuya constancia será agregada en el campo de justificaciones del sistema informático; donde además deberá consignar los temas dictados y la cantidad de alumnos presentes mediante la planilla de asistencia con firma de los mismos.\\
-La finalización del dictado de clase deberá quedar registrado en el dispositivo, los registros deberán realizarse a partir de los 5 minutos posteriores a la finalización del horario de dictado de la materia, y hasta 30 minutos. Los registros fuera de esta ventana de tiempo se computarán como como clase no dictada.\\
-Todos los registros de un docente que califiquen como clase dictada serán considerados con carácter de declaración jurada como así también las planillas de asistencia entregadas al secretario del departamento.\\
-Si transcurridos 25 minutos del horario oficial de inicio de clase, no se hiciera presente ningún alumno de la comisión correspondiente; podrá el docente retirarse, registrar el horario de salida y entregar al secretario del departamento la planilla con su nombre y firma dentro del plazo estipulado a tal fin.\\
-\subsection{de la gestión administrativa}
- Deberá generar los documentos con los resultados de los periodos solicitados por el director del departamento para ser girados a la comisión de enseñanza. Deberá receptar las planillas de asistencias remitidas por los docentes y archivarlas para que estén a disposición de la comisión de enseñanza. Será el único habilitado para editar los campos de comentarios en la base de datos, donde deberá consignar los avisos de inasistencia, licencias y franquicias de los docentes todo en acuerdo con la Ordenanza 474 C.S.U. y sus modificatorias Ord. 671 C.S.U. y Ord. 740 C.S.U.\\
-También será el encargado de cargar los registros en el dispositivo biométrico y el software cliente. Deberá actualizar anualmente el calendario del programa con el calendario académico emitido por la secretaría académica e incluír también las fechas no laborables.\\
-Deberá también cargar las fechas en que el gremio FAGDUT convoque a paro de actividades.\\
-Deberá cargar los suplentes habilitados en cada cátedra.
-\subsection{de la comisión de enseñanza}
- El despacho será "sin novedad" en aquellos casos en que no se observen discrepancias substanciales entre la planificación y el avance declarado en el libro de temas, y que además no se hayan recibido quejas formales ni avisos de licencias, renuncias o jubilaciones y será informado por el director de departamento al iniciar la sesión.\\
-Para cualquier otra situación elaborará un informe acompañado de toda documentación probatoria pertinente y un dictámen o recomendación al respecto; el cual será automáticamente incluído en el temario de la siguiente sesión ordinaria del consejo departamental.
-Que de esta forma la comisión de enseñanza debe emitir un dictamen en todas las reuniones ordinarias de consejo, dando cuenta de las desviaciones entre la planificación y los temas dictados y su correlación, en caso de corresponder con la falta de dictado de clase; como así también observaciones sobre situaciones de inasistencias colectivas.
 \end{document}
