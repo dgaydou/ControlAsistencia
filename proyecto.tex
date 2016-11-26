@@ -28,6 +28,7 @@
 \usepackage{wrapfig} % Allows in-line images
 \usepackage{amsfonts}
 \usepackage{textcomp} % grados celcius y otras yerbas
+\usepackage{soulutf8}
 
 \usepackage{mathpazo} % Use the Palatino font
 \usepackage[T1]{fontenc} % Required for accented characters
@@ -54,7 +55,7 @@
 %<Plug>Tex_InsertItemOnThisLine TITLE
 %----------------------------------------------------------------------------------------
 
-\title{\textbf{Proyecto de ordenanza}\\ % Title
+\title{\textbf{Proyecto \hl{piloto} \st{de ordenanza}}\\ % Title
 \Large Registro del horario de dictado y asistencia a clase} % Subtitle
 
 \author{} % Author
@@ -85,7 +86,7 @@
 %----------------------------------------------------------------------------------------
 
 \section*{Resumen}
-Este proyecto tiene como finalidad aportar un elemento tendiente a proseguir con la mejora continua de la calidad académica de la carrera de Ingeniería en Electrónica, abordando los aspectos de asistencia y puntualidad del personal docentes en relación al cumplimiento de los horarios asignados al dictado de clase. Complementariamente se propone un método de control de asistencia de los alumnos. 
+Este proyecto tiene como finalidad \hl{implementar un mecanismo de registro de horarios de dictado y asistencia a clase para} aportar un elemento tendiente a proseguir con la mejora continua de la calidad académica de la carrera de Ingeniería en Electrónica, abordando los aspectos de asistencia y puntualidad del personal docente \hl{de este departamento} en relación al cumplimiento de los horarios asignados al dictado de clase.\st{Complementariamente se propone un método de control de asistencia de los alumnos. }
 \section*{Antecedentes}
 La necesidad de implementar un mecanismo de control de asistencia docente ha sido señalado hace más de un año en la nota fechada 10 de junio 2015, suscripta por los consejeros del claustro estudiantil del consejo departamental de Electrónica: Martínez Denis, Acha Lautaro, Pucci Francisco, García Mauricio, Cuenca Antonio, Flores Mauricio y otros estudiantes de la carrera de Ingeniería Electrónica; dirigida al consejo departamental y cuya copia se adjunta al presente proyecto. El escrito destaca que dar cumplimentación al mandato estatutario de supervisar la calidad de los procesos de enseñanza implica como condición necesaria el cumplimiento del dictado de clases. También se reclama por  la degradación del dictado de determinadas cátedras debido a inasistencias docentes. Todo por lo cual propone la aplicación de algún dispositivo biométrio para obtener constancia del acceso de los docentes a sus lugares de trabajo.
 El inciso D del acta de reunión del consejo departamental de junio de 2015 dice:\\
@@ -94,22 +95,25 @@ El inciso D del acta de reunión del consejo departamental de junio de 2015 dice
 \\
 Consideramos que la implementación del control de asistencia se encuadrada dentro de las atribuciones del gobierno del departamento, por lo que carece de objeto cursar pedidos de autorización o consultar por la implementación del mismo. Está entre las atribuciones del consejo departamental establecidas por el Estatuto Universitario velar por el cumplimiento de los deberes de los docentes del departamento como parte de la supervisión de la calidad de los procesos de enseñanza (Art. 93 inc. b) y en consecuencia determinar los métodos de control a aplicar.\\
 \\
-Por otra parte y en vista de la circular para los profesores con fecha 3 de marzo de 2016 el control de asistencia dejaría de estar a cargo del área de bedelía debido a su pronta disolución. A la fecha  no se cuentan con lineamientos claros respecto a la implementación de un método sustituto de registro de asistencia que fije criterios uniformes y prevea garantías mediante constancia archivada de tal registro.
+\st{Por otra parte y en vista de la circular para los profesores con fecha 3 de marzo de 2016 el control de asistencia dejaría de estar a cargo del área de bedelía debido a su pronta disolución. A la fecha  no se cuentan con lineamientos claros respecto a la implementación de un método sustituto de registro de asistencia que fije criterios uniformes y prevea garantías mediante constancia archivada de tal registro.}
 \section*{Objetivos}
-Disponer de una base de datos con el registro del horario de inicio y fin del dictado de las asignaturas por parte de los docentes obtenidos a partir de un sistema autónomo de registro, con lo que el director de departamento dé cuenta de las inasistencias docentes en todas las sesiones ordinarias del consejo departamental en cumplimiento de lo ordenado por el Estatuto Universitario (Art. 96 inc. g). 
-\section*{Lineamientos generales de la operación del sistema}
-En la operación del sistema toman participación el claustro docente, el claustro de alumnos, secretaría, dirección y consejo del departamento. El consejo en la supervisión regular de los informes, el secretario y el director en la gestión del sistema de software y reportes, los docentes registrando con su marca biométrica el inicio y fin del horario del dictado de las asignaturas y los alumnos firmando las planillas de asistencia.
-\subsection*{Planilla de asistencia}
-Es un documento que estará a disposición de los alumnos durante un lapso de tiempo a determinar en las correspondientes reglamentaciones. Esta planilla tendrá como finalidad que los alumnos registren su asistencia con su nombre y firma. Quedarán archivadas en el departamento a disposición del consejo departamental.
-\subsection*{Registro de inicio y fin del dictado de clase}
-Los docentes deberán dejar constancia del horario de inicio y fin del dictado de clase utilizando el dispositivo de registración biométrico dispuesto en el departamento de electrónica, de acuerdo a la reglamentación a definir.\\
-\subsection*{Gestión administrativa del sistema}
-Habrá en el departamento una persona dedicada a la gestión operativa del software.
+\st{Disponer de una base de datos con} \hl{Implementar en este departamento (dto. electrónica fac. reg. Cba.)un mecanismo para} el registro del horario de inicio y fin del dictado de las asignaturas por parte de los docentes \hl{mediante un dispositivo biométrico} \st{obtenidos a partir de un sistema autónomo de registro, con lo que el director de departamento dé cuenta de las inasistencias docentes en todas las sesiones ordinarias del consejo departamental en cumplimiento de lo ordenado por el Estatuto Universitario (Art. 96 inc. g)}.
+\section*{\st{Lineamientos generales de la operación del sistema}}
+\st{En la operación del sistema toman participación el claustro docente, el claustro de alumnos, secretaría, dirección y consejo del departamento. El consejo en la supervisión regular de los informes, el secretario y el director en la gestión del sistema de software y reportes, los docentes registrando con su marca biométrica el inicio y fin del horario del dictado de las asignaturas y los alumnos firmando las planillas de asistencia.}
+\subsection*{\st{Planilla de asistencia}}
+\st{Es un documento que estará a disposición de los alumnos durante un lapso de tiempo a determinar en las correspondientes reglamentaciones. Esta planilla tendrá como finalidad que los alumnos registren su asistencia con su nombre y firma. Quedarán archivadas en el departamento a disposición del consejo departamental.}
+\subsection*{\st{Registro de inicio y fin del dictado de clase}}
+\st{Los docentes deberán dejar constancia del horario de inicio y fin del dictado de clase utilizando el dispositivo de registración biométrico dispuesto en el departamento de electrónica, de acuerdo a la reglamentación a definir.}\\
+\subsection*{\st{Gestión administrativa del sistema}}
+\st{Habrá en el departamento una persona dedicada a la gestión operativa del software.}
 \section*{Implementación}
 La puesta en funcionamiento definitiva del sistema estará sujeta a su implementación en etapas sucesivas, en cada una de las cuales se incorporarán nuevas funcionalidades al sistema como así también se avanzará progresivamente desde la participación voluntaria hasta la obligatoriedad de su cumplimiento.\\
+\hl{La aplicación del mecanismo propuesto no demandará recursos humanos extras, más allá del personal actualmente afectado a tareas en el departamento y tampoco tendrá costo para el departamento la implementación técnica ya que los recursos y dispositivos serán provistos por la facultad.}\\
+\hl{Será deber y responsabilidad del director del departamento la gestión del sistema.}\\
 \subsection*{Instancias globales de implementación}
 \begin{itemize}
-	\item Adquirir e instalar un dispositivo biométrico integrándolo a los sistemas informáticos gestionados por centro de cómputos, con transferencia de datos automática sin intervención de operador humano.
+	\item \st{Adquirir e instalar un dispositivo biométrico integrándolo a los sistemas informáticos gestionados por centro de cómputos, con transferencia de datos automática sin intervención de operador humano.}
+	\item Solicitar mediante nota del director del departamento elevada al decano de esta facultad, la provisión de un dispositivo biométrico con lector de huellas digitales y que se instruya al jefe del centro de cómputos para que ponga en funcionamiento el hardware y software necesarios para enlazar el dispositivo con una base de datos en los sevidores de la facultad.
 	\item Reglamentar la operación de la prueba piloto del sistema
 	\item Reglamentar la operación definitiva del sistema
 \end{itemize}
